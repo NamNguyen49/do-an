@@ -2,7 +2,10 @@
 
 import Link from 'next/link';
 import '../styles/login.module.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Login = () => {
     return (
@@ -28,7 +31,9 @@ const Login = () => {
                                     type="button"
                                     className="bg-transparent border border-gray-300 text-gray-700 rounded-md px-4 py-2 flex items-center justify-center w-full hover:bg-gray-100 transition duration-300 shadow-md focus:ring-2 focus:ring-gray-300"
                                 >
-                                    <i className="fab fa-facebook-f text-blue-500 text-lg"></i>
+                                    {/* <i className="fab fa-facebook-f text-blue-500 text-lg"></i> */}
+                                    <FontAwesomeIcon icon={faFacebookF} className="text-blue-500 text-lg" />
+
                                     <span className="ml-2 font-semibold text-sm">FACEBOOK</span>
                                 </button>
                             </div>
@@ -37,7 +42,9 @@ const Login = () => {
                                     type="button"
                                     className="bg-transparent border border-gray-300 text-gray-700 rounded-md px-4 py-2 flex items-center justify-center w-full hover:bg-gray-100 transition duration-300 shadow-md focus:ring-2 focus:ring-gray-300"
                                 >
-                                    <i className="fab fa-google text-red-500 text-lg"></i>
+                                    {/* <i className="fab fa-google text-red-500 text-lg"></i> */}
+                                    <FontAwesomeIcon icon={faGoogle} className="text-red-500 text-lg" />
+
                                     <span className="ml-2 font-semibold text-sm">GOOGLE</span>
                                 </button>
                             </div>
