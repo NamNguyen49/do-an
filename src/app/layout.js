@@ -1,5 +1,5 @@
-import Footer from './components/Footer/Footer';
-import UserHeader from './components/Header/UserHeader';
+// import Footer from './components/Footer/Footer';
+// import UserHeader from './components/Header/UserHeader';
 import StyledComponentsRegistry from '../lib/AntdRegistry';
 import '../app/styles/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';

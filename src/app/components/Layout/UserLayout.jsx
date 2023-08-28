@@ -1,5 +1,5 @@
 import React from 'react';
-import UserHeader from '../Header/UserHeader';
+import UserHeader from '../UserHeader';
 import {
     AppstoreOutlined,
     BarChartOutlined,
@@ -138,6 +138,7 @@ const UserLayout = ({ content }) => {
                             marginTop: 40, color: 'white',
                             display: 'flex', justifyContent: 'center', alignItems: 'center',
                         }}>
+                            LOGOUT
                     </Text>
                 </Space>
 
