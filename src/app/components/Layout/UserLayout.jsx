@@ -42,7 +42,7 @@ const items = [
     label: "MY PROFILE",
   },
 ];
-const UserLayout = ({ content }) => {
+const UserLayout = ({ userHeader, content }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -203,6 +203,7 @@ const UserLayout = ({ content }) => {
           background: "white",
         }}
       >
+
         <Header
           style={{
             padding: 10,
@@ -210,7 +211,8 @@ const UserLayout = ({ content }) => {
             background: colorBgContainer,
           }}
         >
-          <UserHeader />
+          {userHeader}
+          {/* <UserHeader /> */}
         </Header>
 
         <Content

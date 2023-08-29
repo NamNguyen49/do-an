@@ -2,21 +2,20 @@
 
 import React from 'react';
 import Image from 'next/image';
-import UserLayout from './components/Layout/UserLayout';
+import UserLayout from '../components/Layout/UserLayout';
 import { ConfigProvider } from 'antd';
 import { Button, Card } from 'antd';
 const { Meta } = Card;
-import Header from './components/Header';
-import CVCard from './components/Card/CVCard';
-import UserHeader from './components/UserHeader';
+import UserHeader from '../components/UserHeader';
 
-const Home = () => {
+const Experience = () => {
     return (
         <main >
             <ConfigProvider>
                 <UserLayout 
                     userHeader={<UserHeader />}
-                    content={<CVCard />
+                    content={
+                        <p>Experience1</p>                  
                 } />
             </ConfigProvider>
         </main>
@@ -24,4 +23,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Experience;
