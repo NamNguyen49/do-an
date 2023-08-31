@@ -35,7 +35,7 @@ const EducationForm = () => {
 
 
 
-                <Button type="primary" >
+                <Button className="form-button w-full" style={{ backgroundColor: 'rgb(77, 112, 235)', color: 'white' }} >
                     SAVE TO EDUCATION LIST
                 </Button>
             </Form>

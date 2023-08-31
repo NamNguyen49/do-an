@@ -10,8 +10,8 @@ const EducationActions = () => {
 
 
             </div>
-            <div >
-                <Button type="primary" style={{ backgroundColor: 'rgb(77, 112, 235)' }}>
+            <div className="experience-actions" >
+                <Button type="primary w-full" style={{ backgroundColor: 'rgb(77, 112, 235)' }}>
                     CREATE NEW EDUCATION
                 </Button>
             </div>

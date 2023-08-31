@@ -42,7 +42,7 @@ const ExperienceForm = () => {
                         height: 200
                     }} placeholder="• Orgi..." />
                 </Form.Item>
-                <Button type="primary" >
+                <Button className="form-button w-full" style={{ backgroundColor: 'rgb(77, 112, 235)', color: 'white' }} >
                     SAVE TO EXPERIENCE LIST
                 </Button>
             </Form>
