@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExperienceActions = () => {
+const EducationActions = () => {
     return (
         <div className="experience-actions">
             <button className="experience-edit">EDIT</button>
@@ -10,4 +10,4 @@ const ExperienceActions = () => {
     );
 };
 
-export default ExperienceActions;
+export default EducationActions;
