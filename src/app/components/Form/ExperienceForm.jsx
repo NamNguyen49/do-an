@@ -17,36 +17,37 @@ const ExperienceForm = () => {
     const nameValue = Form.useWatch('name', form);
     return (
         <>
-            <Form style={{}} form={form} layout="vertical" autoComplete="off">
-                <Form.Item name="Role" label="WHAT WAS YOUR ROLE AT THE COMPANY?">
-                    <Input style={{}} placeholder="Marketing Analyst" />
-                </Form.Item>
-                <Form.Item name="Company" label="FOR WHICH COMPANY DID YOU WORK?">
-                    <Input style={{}} placeholder="Google" />
-                </Form.Item>
-
-                <div style={{ display: 'flex', alignItems: 'flex-start' }}>                    <div style={{ flex: 1 }}>
-                    <Form.Item style={{ width: 300 }} name="range-picker" label="HOW LONG WERE YOU WITH THE COMPANY?" >
-                        <RangePicker style={{}} />
+            <div className="w-2/3 ">
+                <Form style={{}} form={form} layout="vertical" autoComplete="off">
+                    <Form.Item name="Role" label="WHAT WAS YOUR ROLE AT THE COMPANY?">
+                        <Input style={{}} placeholder="Marketing Analyst" />
                     </Form.Item>
-                </div>
-                    <div style={{ flex: 1 }}>
-                        <Form.Item name="Located" label="WHERE WAS THE COMPANY LOCATED?">
-                            <Input style={{}} placeholder="NewYork, NY" />
+                    <Form.Item name="Company" label="FOR WHICH COMPANY DID YOU WORK?">
+                        <Input style={{}} placeholder="Google" />
+                    </Form.Item>
+
+                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>                    <div style={{ flex: 1 }}>
+                        <Form.Item style={{ width: 300 }} name="range-picker" label="HOW LONG WERE YOU WITH THE COMPANY?" >
+                            <RangePicker style={{}} />
                         </Form.Item>
                     </div>
-                </div>
+                        <div style={{ flex: 1 }}>
+                            <Form.Item name="Located" label="WHERE WAS THE COMPANY LOCATED?">
+                                <Input style={{}} placeholder="NewYork, NY" />
+                            </Form.Item>
+                        </div>
+                    </div>
 
-                <Form.Item name="WhatDo" label="WHAT DID YOU DO AT THE COMPANY?">
-                    <Input style={{
-                        height: 200
-                    }} placeholder="• Orgi..." />
-                </Form.Item>
-                <Button className="form-button w-full" style={{ backgroundColor: 'rgb(77, 112, 235)', color: 'white' }} >
-                    SAVE TO EXPERIENCE LIST
-                </Button>
-            </Form>
-
+                    <Form.Item name="WhatDo" label="WHAT DID YOU DO AT THE COMPANY?">
+                        <Input style={{
+                            height: 200
+                        }} placeholder="• Orgi..." />
+                    </Form.Item>
+                    <Button className="form-button w-full" style={{ backgroundColor: 'rgb(77, 112, 235)', color: 'white' }} >
+                        SAVE TO EXPERIENCE LIST
+                    </Button>
+                </Form>
+            </div>
         </>
     );
 };
