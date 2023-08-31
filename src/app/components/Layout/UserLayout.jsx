@@ -49,7 +49,7 @@ const UserLayout = ({ userHeader, content }) => {
   return (
     <Layout hasSider>
       <Sider
-        width="20%"
+        width="15%"
         style={{
           backgroundColor: "#3C2E8D",
           overflow: "auto",
