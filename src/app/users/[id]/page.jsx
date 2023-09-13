@@ -15,7 +15,7 @@ export default function Home({ params }) {
   useEffect(() => {
     // Fetch user information based on the 'id' parameter
     if (userId) {
-      fetch(`http://170.187.198.18:8080/api/users/${userId}`)
+      fetch(`http://localhost:8080/api/users/${userId}`)
         .then((response) => response.json())
         .then((data) => {
           setUser(data); // Set the user data in state
@@ -40,7 +40,7 @@ export default function Home({ params }) {
   const handleAddEducation = (newEducation) => {
     const userIdInt = parseInt(userId, 10); // Parse as a base-10 integer
 
-    fetch(`http://170.187.198.18:8080/api/users/${userIdInt}/educations`, {
+    fetch(`http://localhost:8080/api/users/${userIdInt}/educations`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export default function Home({ params }) {
       .then((addedEducation) => {
         // Handle the response from the server
         console.log('Education added successfully:', addedEducation);
-        fetch(`http://170.187.198.18:8080/api/users/${userId}`)
+        fetch(`http://localhost:8080/api/users/${userId}`)
         .then((response) => response.json())
         .then((data) => {
           setUser(data); // Set the user data in state
@@ -79,7 +79,7 @@ export default function Home({ params }) {
     };
 
     // Define the URL for the POST request
-    const url = 'http://170.187.198.18:8080/api/cv/generate-cv';
+    const url = 'http://localhost:8080/api/cv/generate-cv';
 
     // Make a POST request with fetch
     fetch(url, {
@@ -113,7 +113,7 @@ export default function Home({ params }) {
       // Send a DELETE request to the API
       const userIdInt = parseInt(userId, 10); // Parse as a base-10 integer
 
-      fetch(`http://170.187.198.18:8080/api/users/${userIdInt}/educations/${educationId}`, {
+      fetch(`http://localhost:8080/api/users/${userIdInt}/educations/${educationId}`, {
         method: 'DELETE',
       })
         .then((response) => {
@@ -122,7 +122,7 @@ export default function Home({ params }) {
             
           }
 
-          fetch(`http://170.187.198.18:8080/api/users/${userId}`)
+          fetch(`http://localhost:8080/api/users/${userId}`)
           .then((response) => response.json())
           .then((data) => {
             setUser(data); // Set the user data in state

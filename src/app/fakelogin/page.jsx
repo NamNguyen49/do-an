@@ -19,7 +19,7 @@ const CreateUser = () => {
         "use server";
 
       // Send a POST request to your backend to create the user
-      const response = await fetch('http://170.187.198.18:8080/api/users', {
+      const response = await fetch('http://localhost:8080/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
